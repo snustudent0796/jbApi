@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.send("tu bhadwa");
 });
 
+app.post("/toggle", (req, res) => {
+  res.send(req.body);
+});
+
 app.get("/json", (req, res) => {
   const lDist = Math.random() * 100;
   const rDist = Math.random() * 100;
